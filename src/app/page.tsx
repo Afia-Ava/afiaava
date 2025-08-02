@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 export default function Home() {
   const [showNav, setShowNav] = useState(true);
@@ -37,15 +38,15 @@ export default function Home() {
               <br />
               design showed me how to make people feel.
               <span style={{ display: 'block', height: '0.75em' }}></span>
-              i love a lot of things, and right now, i’m on an exploration
-              sprint. i’m still learning and shaping
+              i love a lot of things, and right now, i&apos;m on an exploration
+              sprint. i&apos;m still learning and shaping
               <br />
               a future that feels deeply me.
               <br />
               <br />
-              i don’t know exactly where this path leads.
+              i don&apos;t know exactly where this path leads.
               <br />
-              but i’m all in. to make things that feel human.
+              but i&apos;m all in. to make things that feel human.
             </p>
           </div>
           <section id="things" className="mb-24 pt-24">
@@ -56,11 +57,14 @@ export default function Home() {
               {/* Project 1 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/visionly.png"
                     alt="Visionly Project"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
+                    priority
                   />
                 </div>
                 <div className="text-[#eaf7e2] text-base text-center">
@@ -74,9 +78,11 @@ export default function Home() {
               </div>
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/outloud.png"
                     alt="Outloud"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -92,9 +98,11 @@ export default function Home() {
               </div>
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/flashback.png"
                     alt="Flashback"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -305,7 +313,7 @@ export default function Home() {
                   how i mistakenly ended up in tech
                 </div>
                 <p className="text-[#eaf7e2] text-base text-center mb-4">
-                  I didn’t grow up thinking I’d be in tech.
+                  I didn&apos;t grow up thinking I&apos;d be in tech.
                 </p>
                 <a
                   href="#"
@@ -320,7 +328,7 @@ export default function Home() {
                   human experience
                 </div>
                 <p className="text-[#eaf7e2] text-base text-center mb-4">
-                  “human experience” isn’t about
+                  &quot;human experience&quot; isn&apos;t about
                   <br />
                   perfect designs or impressive builds.
                 </p>
@@ -337,7 +345,7 @@ export default function Home() {
                   the homes we make online
                 </div>
                 <p className="text-[#eaf7e2] text-base text-center mb-4">
-                  the internet wasn’t just connection.
+                  the internet wasn&apos;t just connection.
                   <br />
                   it was belonging.
                 </p>
@@ -400,19 +408,24 @@ export default function Home() {
                 className="absolute left-[40px] top-[-32px] w-52 h-52 bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-2xl flex items-center justify-center overflow-hidden z-20"
                 style={{ boxShadow: '0 8px 32px 0 rgba(0,0,0,0.7)' }}
               >
-                <img
+                <Image
                   src="/asset/photo1.jpg"
                   alt="Your Photo 1"
+                  width={208}
+                  height={208}
                   className="w-full h-full object-cover"
+                  priority
                 />
               </div>
               <div
                 className="absolute left-[-144px] top-32 w-52 h-52 bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-2xl flex items-center justify-center overflow-hidden z-10"
                 style={{ boxShadow: '0 8px 32px 0 rgba(0,0,0,0.7)' }}
               >
-                <img
+                <Image
                   src="/asset/photo2.jpg"
                   alt="Your Photo 2"
+                  width={208}
+                  height={208}
                   className="w-full h-full object-cover"
                 />
               </div>
