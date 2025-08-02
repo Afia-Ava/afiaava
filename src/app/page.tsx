@@ -84,8 +84,8 @@ export default function Home() {
                 <div className="text-[#eaf7e2] text-base text-center">
                   <strong>Outloud</strong>
                   <p className="mt-2">
-                    reflect regularly.<br />
-                    share what you're learning.<br />
+                    share what you're learning.
+                    <br />
                     find clarity through writing.
                   </p>
                 </div>
@@ -93,17 +93,18 @@ export default function Home() {
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
                   <img
-                    src="/asset/project3.jpg"
-                    alt="Project 3"
+                    src="/asset/flashback.png"
+                    alt="Flashback"
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
                 </div>
                 <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>Project Title 3</strong>
+                  <strong>Flashback</strong>
                   <p className="mt-2">
-                    Short details about this project. You can describe what it
-                    is, your role, and any highlights here.
+                    a letter to the places
+                    <br />
+                    that changed us.
                   </p>
                 </div>
               </div>
@@ -113,6 +114,111 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
               awards & press
             </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+              {/* Award/Press Box 1 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
+                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                  <img
+                    src="/asset/technovation.png"
+                    alt="Technovation North America Regional Honoree"
+                    className="w-full h-full object-cover m-0 p-0"
+                    style={{ display: 'block' }}
+                  />
+                </div>
+                <div className="text-[#eaf7e2] text-base text-center">
+                  <strong>
+                    technovation north america
+                    <br />
+                    regional honoree
+                  </strong>
+                  <p className="mt-2">
+                    created READelivery app for a non profit
+                    <br />
+                    delivering free-books to low income families
+                  </p>
+                </div>
+              </div>
+              {/* Award/Press Box 2 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
+                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                  <img
+                    src="/asset/ncwit.jpeg"
+                    alt="NCWIT National Honorable Mention & Ohio Winner"
+                    className="w-full h-full object-cover m-0 p-0"
+                    style={{ display: 'block' }}
+                  />
+                </div>
+                <div className="text-[#eaf7e2] text-base text-center">
+                  <strong>
+                    ncwit national honorable
+                    <br />
+                    mention & ohio winner
+                  </strong>
+                  <p className="mt-2">
+                    a distinction highlighting my
+                    <br />
+                    commitment to advancing technology
+                  </p>
+                </div>
+              </div>
+              {/* Award/Press Box 3 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
+                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                  <img
+                    src="/asset/msp.jpg"
+                    alt="moonshot pirates global finalist"
+                    className="w-full h-full object-cover m-0 p-0"
+                    style={{ display: 'block' }}
+                  />
+                </div>
+                <div className="text-[#eaf7e2] text-base text-center">
+                  <strong>moonshot pirates global finalist</strong>
+                  <p className="mt-2">
+                    a competition to tackle pressing global
+                    <br />
+                    issues through innovative thinking
+                  </p>
+                </div>
+              </div>
+              {/* Award/Press Box 4 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
+                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                  <img
+                    src="/asset/conrad.png"
+                    alt="Conrad Challenge"
+                    className="w-full h-full object-cover m-0 p-0"
+                    style={{ display: 'block' }}
+                  />
+                </div>
+                <div className="text-[#eaf7e2] text-base text-center">
+                  <strong>conrad innovator</strong>
+                  <p className="mt-2">
+                    distinction for a standout
+                    <br />
+                    innovation stage proposal
+                  </p>
+                </div>
+              </div>
+              {/* Award/Press Box 5 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
+                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                  <img
+                    src="/asset/swissgirls.png"
+                    alt="featured on swiss venture girls"
+                    className="w-full h-full object-cover m-0 p-0"
+                    style={{ display: 'block' }}
+                  />
+                </div>
+                <div className="text-[#eaf7e2] text-base text-center">
+                  <strong>featured on swiss venture girls</strong>
+                  <p className="mt-2">
+                    interviewed about our
+                    <br />
+                    greenably initiative
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
           <section id="thoughts" className="mb-24 pt-24">
             <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
