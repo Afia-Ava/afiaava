@@ -218,22 +218,176 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+              {/* Award/Press Box 6 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
+                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                  <img
+                    src="/asset/env-expo.png"
+                    alt="env-expo award"
+                    className="w-full h-full object-cover m-0 p-0"
+                    style={{ display: 'block' }}
+                  />
+                </div>
+                <div className="text-[#eaf7e2] text-base text-center">
+                  <strong>
+                    champion at bangladesh
+                    <br />
+                    national environment expo
+                  </strong>
+                  <p className="mt-2">represented greenably team</p>
+                </div>
+              </div>
+              {/* Award/Press Box 7 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
+                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                  <img
+                    src="/asset/nyas.png"
+                    alt="nyas award"
+                    className="w-full h-full object-cover m-0 p-0"
+                    style={{ display: 'block' }}
+                  />
+                </div>
+                <div className="text-[#eaf7e2] text-base text-center">
+                  <strong>
+                    member at new york
+                    <br />
+                    academy of sciences
+                  </strong>
+                  <p className="mt-2">worked on a space habitation project</p>
+                </div>
+              </div>
+              {/* Award/Press Box 8 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
+                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                  <img
+                    src="/asset/cso.png"
+                    alt="cso award"
+                    className="w-full h-full object-cover m-0 p-0"
+                    style={{ display: 'block' }}
+                  />
+                </div>
+                <div className="text-[#eaf7e2] text-base text-center">
+                  <strong>
+                    semi finalist at intl
+                    <br />
+                    climate science olympiad
+                  </strong>
+                  <p className="mt-2">
+                    proposed innovative solutions to climate crisis
+                  </p>
+                </div>
+              </div>
+              {/* Award/Press Box 9 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
+                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
+                  <img
+                    src="/asset/codeinplace.png"
+                    alt="codeinplace award"
+                    className="w-full h-full object-cover m-0 p-0"
+                    style={{ display: 'block' }}
+                  />
+                </div>
+                <div className="text-[#eaf7e2] text-base text-center">
+                  <strong>stanford code in place</strong>
+                  <p className="mt-2">attended 2024 & 2025 cohort</p>
+                </div>
+              </div>
             </div>
           </section>
           <section id="thoughts" className="mb-24 pt-24">
             <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
               my thoughts
             </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
+              {/* Writing Box 1 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
+                <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
+                  how i mistakenly ended up in tech
+                </div>
+                <p className="text-[#eaf7e2] text-base text-center mb-4">
+                  I didn’t grow up thinking I’d be in tech.
+                </p>
+                <a
+                  href="#"
+                  className="text-[#b6e3a7] hover:underline font-medium"
+                >
+                  read more
+                </a>
+              </div>
+              {/* Writing Box 2 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
+                <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
+                  human experience
+                </div>
+                <p className="text-[#eaf7e2] text-base text-center mb-4">
+                  “human experience” isn’t about
+                  <br />
+                  perfect designs or impressive builds.
+                </p>
+                <a
+                  href="#"
+                  className="text-[#b6e3a7] hover:underline font-medium"
+                >
+                  read more
+                </a>
+              </div>
+              {/* Writing Box 3 */}
+              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
+                <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
+                  the homes we make online
+                </div>
+                <p className="text-[#eaf7e2] text-base text-center mb-4">
+                  the internet wasn’t just connection.
+                  <br />
+                  it was belonging.
+                </p>
+                <a
+                  href="#"
+                  className="text-[#b6e3a7] hover:underline font-medium"
+                >
+                  read more
+                </a>
+              </div>
+            </div>
           </section>
           <section id="about" className="mb-24 pt-24">
             <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
               more about me
             </h2>
+            <ul className="list-disc list-inside text-[#eaf7e2] text-lg space-y-2 mt-4">
+              <li>i'm 17, a senior in high school</li>
+              <li>i'm from bangladesh and based in the us</li>
+              <li>i love tech, engineering, design</li>
+              <li>i like when things give out the human feeling</li>
+            </ul>
           </section>
           <section id="contact" className="mb-24 pt-24">
             <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
               contact me
             </h2>
+            <div className="flex flex-col items-start gap-4 mt-6">
+              <a
+                href="https://www.linkedin.com/in/afia-khanom-ava"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#0a66c2] text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-[#084b8a] transition"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://twitter.com/aafia_ava"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#1da1f2] text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-[#0d8ddb] transition"
+              >
+                Twitter
+              </a>
+              <div className="flex items-center gap-2">
+                <span className="bg-[#eaf7e2] text-black px-6 py-2 rounded-lg font-semibold shadow select-all">
+                  afiakhanomava@gmail.com
+                </span>
+              </div>
+            </div>
           </section>
         </section>
         {showNav && (
