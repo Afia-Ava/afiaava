@@ -90,7 +90,7 @@ export default function Home() {
                 <div className="text-[#eaf7e2] text-base text-center">
                   <strong>Outloud</strong>
                   <p className="mt-2">
-                    share what you're learning.
+                    share what you&apos;re learning.
                     <br />
                     find clarity through writing.
                   </p>
@@ -126,9 +126,11 @@ export default function Home() {
               {/* Award/Press Box 1 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/technovation.png"
                     alt="Technovation North America Regional Honoree"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -149,9 +151,11 @@ export default function Home() {
               {/* Award/Press Box 2 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/ncwit.jpeg"
                     alt="NCWIT National Honorable Mention & Ohio Winner"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -172,9 +176,11 @@ export default function Home() {
               {/* Award/Press Box 3 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/msp.jpg"
                     alt="moonshot pirates global finalist"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -191,9 +197,11 @@ export default function Home() {
               {/* Award/Press Box 4 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/conrad.png"
                     alt="Conrad Challenge"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -210,9 +218,11 @@ export default function Home() {
               {/* Award/Press Box 5 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/swissgirls.png"
                     alt="featured on swiss venture girls"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -229,9 +239,11 @@ export default function Home() {
               {/* Award/Press Box 6 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/env-expo.png"
                     alt="env-expo award"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -248,9 +260,11 @@ export default function Home() {
               {/* Award/Press Box 7 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/nyas.png"
                     alt="nyas award"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -267,9 +281,11 @@ export default function Home() {
               {/* Award/Press Box 8 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/cso.png"
                     alt="cso award"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -288,9 +304,11 @@ export default function Home() {
               {/* Award/Press Box 9 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
                 <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <img
+                  <Image
                     src="/asset/codeinplace.png"
                     alt="codeinplace award"
+                    width={256}
+                    height={160}
                     className="w-full h-full object-cover m-0 p-0"
                     style={{ display: 'block' }}
                   />
@@ -363,8 +381,8 @@ export default function Home() {
               more about me
             </h2>
             <ul className="list-disc list-inside text-[#eaf7e2] text-lg space-y-2 mt-4">
-              <li>i'm 17, a senior in high school</li>
-              <li>i'm from bangladesh and based in the us</li>
+              <li>i&apos;m 17, a senior in high school</li>
+              <li>i&apos;m from bangladesh and based in the us</li>
               <li>i love tech, engineering, design</li>
               <li>i like when things give out the human feeling</li>
             </ul>
