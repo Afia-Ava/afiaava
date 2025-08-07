@@ -325,7 +325,6 @@ export default function Home() {
               my thoughts
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
-              {/* Writing Box 1 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
                 <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
                   how i mistakenly ended up in tech
@@ -334,13 +333,12 @@ export default function Home() {
                   I didn&apos;t grow up thinking I&apos;d be in tech.
                 </p>
                 <a
-                  href="#"
+                  href="/articles/how-i-ended-up-in-tech"
                   className="text-[#b6e3a7] hover:underline font-medium"
                 >
                   read more
                 </a>
               </div>
-              {/* Writing Box 2 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
                 <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
                   human experience
@@ -351,13 +349,12 @@ export default function Home() {
                   perfect designs or impressive builds.
                 </p>
                 <a
-                  href="#"
+                  href="/articles/human-experience"
                   className="text-[#b6e3a7] hover:underline font-medium"
                 >
                   read more
                 </a>
               </div>
-              {/* Writing Box 3 */}
               <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
                 <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
                   the homes we make online
@@ -368,7 +365,7 @@ export default function Home() {
                   it was belonging.
                 </p>
                 <a
-                  href="#"
+                  href="/articles/homes-we-make-online"
                   className="text-[#b6e3a7] hover:underline font-medium"
                 >
                   read more
