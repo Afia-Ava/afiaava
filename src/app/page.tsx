@@ -1,6 +1,7 @@
-'use client';
+"use client";
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+
 export default function Home() {
   const [showNav, setShowNav] = useState(true);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -16,39 +17,56 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex items-start justify-center min-h-screen bg-black px-4 pt-12">
-      <div className="flex flex-row w-full max-w-7xl gap-8 md:gap-20 items-start md:items-stretch">
-        <section className="flex-1 flex flex-col justify-center py-12 md:py-0 md:ml-4 lg:ml-8">
-          <div className="mb-8 md:mb-0">
-            <h1 className="text-left text-6xl md:text-7xl mb-6 font-bold tracking-wide text-[#eaf7e2] font-[var(--font-cinzel)] drop-shadow-lg">
-              afia ava
-            </h1>
-            <p className="text-yellow-50 text-left text-lg max-w-md mb-8 font-[var(--font-garamond)] whitespace-pre-line">
-              hi, i&apos;m afia.
-              <br />i build things that i feel matter.
-              <span style={{ display: 'block', height: '0.75em' }}></span>
-              i grew up between countries and cultures,
-              <br />
-              always trying to figure out who i wanted to be.
-              <br />
-              <span style={{ display: 'block', height: '0.75em' }}></span>
-              tech gave me the power to bring ideas to life.
-              <br />
-              engineering taught me how to solve problems.
-              <br />
-              design showed me how to make people feel.
-              <span style={{ display: 'block', height: '0.75em' }}></span>
-              i love a lot of things, and right now, i&apos;m on an exploration
-              sprint. i&apos;m still learning and shaping
-              <br />
-              a future that feels deeply me.
-              <br />
-              <br />
-              i don&apos;t know exactly where this path leads.
-              <br />
-              but i&apos;m all in. to make things that feel human.
-            </p>
+    <div id="home">
+      <nav className="w-full flex items-center justify-between px-8 py-4 bg-black/80 border-b border-[#232323] sticky top-0 z-50">
+        <div className="flex items-center gap-2">
+          <span className="bg-[#232323] rounded-lg px-2 py-1 flex items-center text-white font-semibold text-lg ml-8">
+            <a href="#home" className="focus:outline-none">afiaava</a>
+          </span>
+        </div>
+        <div className="flex items-center gap-4">
+          <a href="#about" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</a>
+          <a href="#things" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">projects</a>
+          <a href="#awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</a>
+          <a href="#thoughts" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</a>
+          <a
+            href="https://github.com/Afia-Ava"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2 p-2 rounded-lg border border-[#232323] bg-[#18181b] hover:bg-[#232323] transition"
+            aria-label="GitHub"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-white">
+              <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+  <main className="flex flex-col min-h-screen bg-black px-0 pt-0">
+      {/* Hero Section */}
+      <section className="w-full flex flex-col md:flex-row items-stretch justify-center bg-black border-b border-[#232526]" style={{ minHeight: '60vh' }}>
+        <div className="flex-1 flex flex-col justify-center px-8 md:px-20 py-16">
+          <h1 className="text-left text-5xl md:text-7xl font-bold tracking-tight text-white mb-4 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
+            afia ava<br />
+            <span className="text-[#bdbdbd] font-normal">building things. learning as i go.</span>
+          </h1>
+          <p className="text-left text-lg md:text-xl text-[#ededed] max-w-2xl mb-8 mt-2" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
+            i build things <span className="italic">i care about</span> and write about <span className="italic">what i learn</span>.
+          </p>
+          <div className="flex flex-row gap-4 mt-4">
+            <button className="bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition">read my story</button>
+            <button className="bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition">let&apos;s connect</button>
           </div>
+        </div>
+        <div className="flex-1 flex items-center justify-center p-8 md:p-16">
+          <div className="bg-[#181818] rounded-2xl shadow-lg flex items-center justify-center w-full h-72 md:h-96 max-w-md border border-[#232526]">
+            <span className="text-5xl md:text-7xl text-[#4fffd7] font-bold font-mono">HEY</span>
+          </div>
+        </div>
+      </section>
+      {/* Main Content */}
+      <div className="flex flex-row w-full max-w-7xl gap-8 md:gap-20 items-start md:items-stretch mx-auto px-4 pt-12">
+        <section className="flex-1 flex flex-col justify-center py-12 md:py-0 md:ml-4 lg:ml-8">
           <section id="things" className="mb-24 pt-24">
             <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
               things i make
@@ -413,72 +431,6 @@ export default function Home() {
             </div>
           </section>
         </section>
-        {showNav && (
-          <div className="hidden md:flex flex-row items-end gap-10 pr-4 pt-24 sticky top-24 h-fit">
-            <div
-              className="relative mr-16"
-              style={{ width: '220px', height: '360px' }}
-            >
-              <div
-                className="absolute left-[40px] top-[-32px] w-52 h-52 bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-2xl flex items-center justify-center overflow-hidden z-20"
-                style={{ boxShadow: '0 8px 32px 0 rgba(0,0,0,0.7)' }}
-              >
-                <Image
-                  src="/asset/photo1.jpg"
-                  alt="Your Photo 1"
-                  width={208}
-                  height={208}
-                  className="w-full h-full object-cover"
-                  priority
-                />
-              </div>
-              <div
-                className="absolute left-[-144px] top-32 w-52 h-52 bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-2xl flex items-center justify-center overflow-hidden z-10"
-                style={{ boxShadow: '0 8px 32px 0 rgba(0,0,0,0.7)' }}
-              >
-                <Image
-                  src="/asset/photo2.jpg"
-                  alt="Your Photo 2"
-                  width={208}
-                  height={208}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <nav className="flex flex-col items-end gap-6 ml-8">
-              <a
-                href="#things"
-                className="text-[#eaf7e2] hover:text-[#d6e7d0] font-semibold text-lg transition"
-              >
-                things i make
-              </a>
-              <a
-                href="#awards"
-                className="text-[#eaf7e2] hover:text-[#d6e7d0] font-semibold text-lg transition"
-              >
-                awards & press
-              </a>
-              <a
-                href="#thoughts"
-                className="text-[#eaf7e2] hover:text-[#d6e7d0] font-semibold text-lg transition"
-              >
-                my thoughts
-              </a>
-              <a
-                href="#about"
-                className="text-[#eaf7e2] hover:text-[#d6e7d0] font-semibold text-lg transition"
-              >
-                more about me
-              </a>
-              <a
-                href="#contact"
-                className="text-[#eaf7e2] hover:text-[#d6e7d0] font-semibold text-lg transition"
-              >
-                contact me
-              </a>
-            </nav>
-          </div>
-        )}
         {showScrollTop && (
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -489,6 +441,6 @@ export default function Home() {
           </button>
         )}
       </div>
-    </main>
+  </main>
+  </div>
   );
-}
