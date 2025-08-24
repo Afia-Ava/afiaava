@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Projects() {
 	return (
@@ -7,14 +8,14 @@ export default function Projects() {
 			<nav className="w-full flex items-center justify-between px-8 md:px-32 py-4 bg-black/80 border-b border-[#232323] sticky top-0 z-50">
 				<div className="flex items-center gap-2">
 					<span className="bg-[#232323] rounded-lg px-2 py-1 flex items-center text-white font-semibold text-lg ml-8">
-						<a href="/" className="focus:outline-none">afiaava</a>
+						<Link href="/" className="focus:outline-none">afiaava</Link>
 					</span>
 				</div>
 				<div className="flex items-center gap-4">
-					<a href="/#about" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</a>
-					<a href="/projects" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">projects</a>
-					<a href="/#awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</a>
-					<a href="/#thoughts" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</a>
+					<Link href="/#about" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</Link>
+					<Link href="/projects" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">projects</Link>
+					<Link href="/#awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</Link>
+					<Link href="/#thoughts" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</Link>
 					<a
 						href="https://github.com/Afia-Ava"
 						target="_blank"
@@ -33,7 +34,7 @@ export default function Projects() {
 					my involvements
 				</h1>
 				<p className="text-center text-base md:text-lg text-[#bdbdbd] mb-10" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
-					a collection of things i've been creating
+					a collection of things I&apos;ve been creating
 				</p>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mx-auto">
 					{/* Example Project Card */}
@@ -41,21 +42,21 @@ export default function Projects() {
 									logo="/asset/visionly.png"
 									title="visionly"
 									description="a vision board to keep you on track to meet your goals"
-									ctaLabel="read story"
-									ctaLink="#"
+									ctaLabel="explore"
+									ctaLink="https://afia-ava.github.io/visionly/"
 								/>
 								<ProjectCard
 									logo="/asset/outloud.png"
 									title="outloud"
 									description="document your journey while building things"
-									ctaLabel="coming soon"
+									ctaLabel="explore"
 									ctaLink="#"
 								/>
 								<ProjectCard
 									logo="/asset/flashback.png"
 									title="flashback"
 									description="make shared image folder maps with friends worldwide"
-									ctaLabel="stealth mode"
+									ctaLabel="explore"
 									ctaLink="#"
 								/>
 				</div>
@@ -88,22 +89,9 @@ function ProjectCard({ logo, title, description, ctaLabel, ctaLink }: ProjectCar
 				<span className="text-white text-lg font-bold mt-4 text-center w-full block" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>{title}</span>
 			</div>
 			<div className="text-[#bdbdbd] text-sm mb-4" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>{description}</div>
-			<a href={ctaLink} className="w-full mt-auto px-4 py-2 rounded bg-[#232323] text-[#bdbdbd] text-center font-medium text-sm hover:bg-[#232323]/80 transition" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>{ctaLabel}</a>
+			<a href={ctaLink} target="_blank" rel="noopener noreferrer" className="w-full mt-auto px-4 py-2 rounded bg-[#232323] text-[#bdbdbd] text-center font-medium text-sm hover:bg-[#232323]/80 transition" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>{ctaLabel}</a>
 		</div>
 	);
 }
 
-type InfoRowProps = {
-	label: string;
-	value: string;
-};
-
-function InfoRow({ label, value }: InfoRowProps) {
-  return (
-    <div className="flex flex-col items-center bg-[#232323] rounded px-3 py-1 min-w-[64px]">
-      <span className="text-[#bdbdbd] text-xs font-medium uppercase">{label}</span>
-      <span className="text-white text-base font-bold">{value}</span>
-    </div>
-  );
-}
 }
