@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div id="home">
-      <nav className="w-full flex items-center justify-between px-8 py-4 bg-black/80 border-b border-[#232323] sticky top-0 z-50">
+      <nav className="w-full flex items-center justify-between px-8 md:px-32 py-4 bg-black/80 border-b border-[#232323] sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <span className="bg-[#232323] rounded-lg px-2 py-1 flex items-center text-white font-semibold text-lg ml-8">
             <a href="#home" className="focus:outline-none">afiaava</a>
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-4">
           <a href="#about" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</a>
-          <a href="#things" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">projects</a>
+          <a href="/projects" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">projects</a>
           <a href="#awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</a>
           <a href="#thoughts" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</a>
           <a
@@ -43,14 +43,14 @@ export default function Home() {
         </div>
       </nav>
   <main className="flex flex-col min-h-screen bg-black px-0 pt-0">
-      {/* Hero Section */}
-      <section className="w-full flex flex-col md:flex-row items-stretch justify-center bg-black border-b border-[#232526]" style={{ minHeight: '60vh' }}>
+  {/* Hero Section */}
+  <section className="w-full flex flex-col md:flex-row items-stretch justify-center bg-black border-b border-[#232526] pt-24 px-8 md:px-32" style={{ minHeight: '60vh' }}>
         <div className="flex-1 flex flex-col justify-center px-8 md:px-20 py-16">
           <h1 className="text-left text-5xl md:text-7xl font-bold tracking-tight text-white mb-4 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
             afia ava<br />
             <span className="text-[#bdbdbd] font-normal">building things. learning as i go.</span>
           </h1>
-          <p className="text-left text-lg md:text-xl text-[#ededed] max-w-2xl mb-8 mt-2" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
+          <p className="text-left text-lg md:text-xl text-[#ededed] max-w-2xl mb-8 mt-2 whitespace-nowrap" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
             i build things <span className="italic">i care about</span> and write about <span className="italic">what i learn</span>.
           </p>
           <div className="flex flex-row gap-4 mt-4">
@@ -64,79 +64,31 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Main Content */}
-      <div className="flex flex-row w-full max-w-7xl gap-8 md:gap-20 items-start md:items-stretch mx-auto px-4 pt-12">
-        <section className="flex-1 flex flex-col justify-center py-12 md:py-0 md:ml-4 lg:ml-8">
-          <section id="things" className="mb-24 pt-24">
-            <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
-              things i make
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
-              {/* Project 1 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/visionly.png"
-                    alt="Visionly Project"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                    priority
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>Visionly</strong>
-                  <p className="mt-2">
-                    a visual board app for people
-                    <br />
-                    who dream in pictures.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/outloud.png"
-                    alt="Outloud"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>Outloud</strong>
-                  <p className="mt-2">
-                    share what you&apos;re learning.
-                    <br />
-                    find clarity through writing.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/flashback.png"
-                    alt="Flashback"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>Flashback</strong>
-                  <p className="mt-2">
-                    a letter to the places
-                    <br />
-                    that changed us.
-                  </p>
-                </div>
-              </div>
-            </div>
+  {/* Main Content */}
+  <div className="flex flex-row w-full max-w-7xl gap-8 md:gap-20 items-start md:items-stretch mx-auto px-4 pt-12">
+          <section className="flex-1 flex flex-col justify-center py-0 md:py-0 md:ml-4 lg:ml-8">
+            <section id="things" className="mb-24 pt-24">
+      {/* Story Section */}
+      <section className="w-full flex flex-col md:flex-row items-center justify-center bg-black border-b border-[#232526] pt-0 pb-2 px-8 md:px-32" style={{ minHeight: '24vh', marginTop: 0 }}>
+        <div className="flex-1 flex items-center justify-center p-8 md:p-16">
+          <div className="bg-[#181818] rounded-2xl shadow-lg flex items-center justify-center w-full h-72 md:h-96 max-w-md border border-[#232526]">
+          </div>
+        </div>
+        <div className="flex-1 flex flex-col justify-center px-8 md:px-20 py-8">
+          <h2 className="text-left text-5xl md:text-6xl font-bold tracking-tight text-white mb-4 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
+            <span className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-2 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
+              the story behind.
+            </span>
+          </h2>
+          <div className="text-[#bdbdbd] text-lg font-medium mb-2">Hi, I’m Afia.</div>
+          <div className="text-[#ededed] text-sm md:text-base mb-4 max-w-xl space-y-4" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>
+            <p>I’m 17, and I love to build things. From small coding projects at home to startups that actually reached people, I’ve spent my life figuring out how to turn ideas into real products.</p>
+            <p>I’ve failed a lot, learned even more, and now I’m sharing what I’ve discovered so others can build faster, smarter, and with fewer mistakes.</p>
+          </div>
+        </div>
+      </section>
           </section>
-          <section id="awards" className="mb-24 pt-24">
+            <section id="awards" className="mb-24 pt-24">
             <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
               awards & press
             </h2>
@@ -337,61 +289,61 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
-          <section id="thoughts" className="mb-24 pt-24">
-            <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
-              my thoughts
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
-                <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
-                  how i mistakenly ended up in tech
+            </section>
+            <section id="thoughts" className="mb-24 pt-24">
+              <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
+                my thoughts
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
+                <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
+                  <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
+                    how i mistakenly ended up in tech
+                  </div>
+                  <p className="text-[#eaf7e2] text-base text-center mb-4">
+                    I didn&apos;t grow up thinking I&apos;d be in tech.
+                  </p>
+                  <a
+                    href="/articles/how-i-ended-up-in-tech"
+                    className="text-[#b6e3a7] hover:underline font-medium"
+                  >
+                    read more
+                  </a>
                 </div>
-                <p className="text-[#eaf7e2] text-base text-center mb-4">
-                  I didn&apos;t grow up thinking I&apos;d be in tech.
-                </p>
-                <a
-                  href="/articles/how-i-ended-up-in-tech"
-                  className="text-[#b6e3a7] hover:underline font-medium"
-                >
-                  read more
-                </a>
-              </div>
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
-                <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
-                  human experience
+                <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
+                  <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
+                    human experience
+                  </div>
+                  <p className="text-[#eaf7e2] text-base text-center mb-4">
+                    &quot;human experience&quot; isn&apos;t about
+                    <br />
+                    perfect designs or impressive builds.
+                  </p>
+                  <a
+                    href="/articles/human-experience"
+                    className="text-[#b6e3a7] hover:underline font-medium"
+                  >
+                    read more
+                  </a>
                 </div>
-                <p className="text-[#eaf7e2] text-base text-center mb-4">
-                  &quot;human experience&quot; isn&apos;t about
-                  <br />
-                  perfect designs or impressive builds.
-                </p>
-                <a
-                  href="/articles/human-experience"
-                  className="text-[#b6e3a7] hover:underline font-medium"
-                >
-                  read more
-                </a>
-              </div>
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
-                <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
-                  the homes we make online
+                <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
+                  <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
+                    the homes we make online
+                  </div>
+                  <p className="text-[#eaf7e2] text-base text-center mb-4">
+                    the internet wasn&apos;t just connection.
+                    <br />
+                    it was belonging.
+                  </p>
+                  <a
+                    href="/articles/homes-we-make-online"
+                    className="text-[#b6e3a7] hover:underline font-medium"
+                  >
+                    read more
+                  </a>
                 </div>
-                <p className="text-[#eaf7e2] text-base text-center mb-4">
-                  the internet wasn&apos;t just connection.
-                  <br />
-                  it was belonging.
-                </p>
-                <a
-                  href="/articles/homes-we-make-online"
-                  className="text-[#b6e3a7] hover:underline font-medium"
-                >
-                  read more
-                </a>
               </div>
-            </div>
-          </section>
-          <section id="about" className="mb-24 pt-24">
+            </section>
+            <section id="about" className="mb-24 pt-24">
             <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
               more about me
             </h2>
@@ -402,45 +354,37 @@ export default function Home() {
               <li>i like when things give out the human feeling</li>
             </ul>
           </section>
-          <section id="contact" className="mb-24 pt-24">
-            <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
-              contact me
-            </h2>
-            <div className="flex flex-col items-start gap-4 mt-6">
-              <a
-                href="https://www.linkedin.com/in/afia-khanom-ava"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#0a66c2] text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-[#084b8a] transition"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="https://twitter.com/aafia_ava"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#1da1f2] text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-[#0d8ddb] transition"
-              >
-                Twitter
-              </a>
-              <div className="flex items-center gap-2">
-                <span className="bg-[#eaf7e2] text-black px-6 py-2 rounded-lg font-semibold shadow select-all">
-                  afiakhanomava@gmail.com
-                </span>
-              </div>
-            </div>
+            <section id="contact" className="mb-24 pt-24">
+            </section>
           </section>
-        </section>
-        {showScrollTop && (
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="fixed bottom-8 right-8 z-50 bg-[#eaf7e2] text-black px-5 py-3 rounded-full shadow-lg font-bold text-lg hover:bg-[#d6e7d0] transition"
-            aria-label="Scroll to top"
-          >
-            ↑ Top
-          </button>
-        )}
+        </div>
+      </main>
+      <footer className="w-full bg-black py-10 flex flex-col items-center border-t border-[#232323]">
+      <div className="flex flex-row gap-8 mb-4 text-[#ededed] text-lg font-medium">
+        <a href="#about" className="hover:underline">about</a>
+        <a href="#things" className="hover:underline">projects</a>
+        <a href="#awards" className="hover:underline">awards</a>
+        <a href="#thoughts" className="hover:underline">blog</a>
       </div>
-  </main>
-  </div>
+      <div className="flex flex-row gap-4 mb-4">
+        <a href="https://instagram.com/afiaava" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/></svg>
+        </a>
+        <a href="https://t.me/afiaava" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M9.5 16.5l-1.5-4.5 9-3.5-7.5 8zm0 0l-1.5-4.5 9-3.5-7.5 8zm0 0l-1.5-4.5 9-3.5-7.5 8z"/></svg>
+        </a>
+        <a href="https://twitter.com/aafia_ava" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.59-2.47.7a4.3 4.3 0 0 0 1.88-2.37c-.83.5-1.75.87-2.72 1.07A4.28 4.28 0 0 0 16.11 4c-2.37 0-4.29 1.92-4.29 4.29 0 .34.04.67.1.99C7.69 9.13 4.07 7.38 1.64 4.7c-.37.64-.58 1.38-.58 2.17 0 1.5.76 2.83 1.92 3.61-.71-.02-1.38-.22-1.97-.54v.05c0 2.1 1.5 3.85 3.5 4.25-.36.1-.74.16-1.13.16-.28 0-.54-.03-.8-.08.54 1.7 2.11 2.94 3.97 2.97A8.6 8.6 0 0 1 2 19.54c-.56 0-1.1-.03-1.64-.1A12.13 12.13 0 0 0 7.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.36-.02-.54A8.18 8.18 0 0 0 22.46 6z"/></svg>
+        </a>
+        <a href="https://github.com/Afia-Ava" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+        </a>
+        <a href="https://youtube.com/@afiaava" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M21.8 8.001a2.75 2.75 0 0 0-1.94-1.94C18.07 6 12 6 12 6s-6.07 0-7.86.061a2.75 2.75 0 0 0-1.94 1.94C2 9.79 2 12 2 12s0 2.21.061 3.999a2.75 2.75 0 0 0 1.94 1.94C5.93 18 12 18 12 18s6.07 0 7.86-.061a2.75 2.75 0 0 0 1.94-1.94C22 14.21 22 12 22 12s0-2.21-.2-3.999zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+        </a>
+      </div>
+      <div className="text-[#bdbdbd] text-sm mb-2">© 2025 afia ava. all rights reserved.</div>
+      </footer>
+    </div>
   );
+}
