@@ -1,6 +1,9 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
+
+
 
 export default function Home() {
   const [showNav, setShowNav] = useState(true);
@@ -21,14 +24,14 @@ export default function Home() {
       <nav className="w-full flex items-center justify-between px-8 md:px-32 py-4 bg-black/80 border-b border-[#232323] sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <span className="bg-[#232323] rounded-lg px-2 py-1 flex items-center text-white font-semibold text-lg ml-8">
-            <a href="#home" className="focus:outline-none">afiaava</a>
+            <a href="/" className="focus:outline-none">afiaava</a>
           </span>
         </div>
         <div className="flex items-center gap-4">
-          <a href="#about" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</a>
+          <a href="/" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</a>
           <a href="/projects" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">projects</a>
-          <a href="#awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</a>
-          <a href="#thoughts" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</a>
+          <Link href="/awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</Link>
+          <Link href="/blogs" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</Link>
           <a
             href="https://github.com/Afia-Ava"
             target="_blank"
@@ -45,7 +48,7 @@ export default function Home() {
   <main className="flex flex-col min-h-screen bg-black px-0 pt-0">
   {/* Hero Section */}
   <section className="w-full flex flex-col md:flex-row items-stretch justify-center bg-black border-b border-[#232526] pt-24 px-8 md:px-32" style={{ minHeight: '60vh' }}>
-        <div className="flex-1 flex flex-col justify-center px-8 md:px-20 py-16">
+  <div className="flex-1 flex flex-col justify-center px-8 md:px-20 py-16">
           <h1 className="text-left text-5xl md:text-7xl font-bold tracking-tight text-white mb-4 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
             afia ava<br />
             <span className="text-[#bdbdbd] font-normal">building things. learning as i go.</span>
@@ -54,13 +57,12 @@ export default function Home() {
             i build things <span className="italic">i care about</span> and write about <span className="italic">what i learn</span>.
           </p>
           <div className="flex flex-row gap-4 mt-4">
-            <button className="bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition">read my story</button>
             <button className="bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition">let&apos;s connect</button>
           </div>
         </div>
         <div className="flex-1 flex items-center justify-center p-8 md:p-16">
-          <div className="bg-[#181818] rounded-2xl shadow-lg flex items-center justify-center w-full h-72 md:h-96 max-w-md border border-[#232526]">
-            <span className="text-5xl md:text-7xl text-[#4fffd7] font-bold font-mono">HEY</span>
+          <div className="bg-[#181818] rounded-2xl shadow-lg flex items-center justify-center w-full h-72 md:h-96 max-w-md border border-[#232526] overflow-hidden">
+            <Image src="/asset/afiaava.jfif" alt="Afia Ava" width={320} height={320} className="object-cover w-full h-full rounded-2xl" />
           </div>
         </div>
       </section>
@@ -71,7 +73,8 @@ export default function Home() {
       {/* Story Section */}
       <section className="w-full flex flex-col md:flex-row items-center justify-center bg-black border-b border-[#232526] pt-0 pb-2 px-8 md:px-32" style={{ minHeight: '24vh', marginTop: 0 }}>
         <div className="flex-1 flex items-center justify-center p-8 md:p-16">
-          <div className="bg-[#181818] rounded-2xl shadow-lg flex items-center justify-center w-full h-72 md:h-96 max-w-md border border-[#232526]">
+          <div className="bg-[#181818] rounded-2xl shadow-lg flex items-center justify-center w-full h-72 md:h-96 max-w-md border border-[#232526] overflow-hidden">
+            <Image src="/asset/afiaava2.jfif" alt="Afia Ava 2" width={320} height={320} className="object-cover w-full h-full rounded-2xl" />
           </div>
         </div>
         <div className="flex-1 flex flex-col justify-center px-8 md:px-20 py-8">
@@ -82,289 +85,34 @@ export default function Home() {
           </h2>
           <div className="text-[#bdbdbd] text-lg font-medium mb-2">Hi, I’m Afia.</div>
           <div className="text-[#ededed] text-sm md:text-base mb-4 max-w-xl space-y-4" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>
-            <p>I’m 17, and I love to build things. From small coding projects at home to startups that actually reached people, I’ve spent my life figuring out how to turn ideas into real products.</p>
+            <p>I’m 17, and I love to build things. From small coding projects at home to initiatives that actually reached people, I’ve spent my life figuring out how to turn ideas into real products.</p>
             <p>I’ve failed a lot, learned even more, and now I’m sharing what I’ve discovered so others can build faster, smarter, and with fewer mistakes.</p>
           </div>
+          <button className="mt-2 bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition">read my story</button>
         </div>
       </section>
-          </section>
-            <section id="awards" className="mb-24 pt-24">
-            <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
-              awards & press
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
-              {/* Award/Press Box 1 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/technovation.png"
-                    alt="Technovation North America Regional Honoree"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>
-                    technovation north america
-                    <br />
-                    regional honoree
-                  </strong>
-                  <p className="mt-2">
-                    created READelivery app for a non profit
-                    <br />
-                    delivering free-books to low income families
-                  </p>
-                </div>
-              </div>
-              {/* Award/Press Box 2 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/ncwit.jpeg"
-                    alt="NCWIT National Honorable Mention & Ohio Winner"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>
-                    ncwit national honorable
-                    <br />
-                    mention & ohio winner
-                  </strong>
-                  <p className="mt-2">
-                    a distinction highlighting my
-                    <br />
-                    commitment to advancing technology
-                  </p>
-                </div>
-              </div>
-              {/* Award/Press Box 3 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/msp.jpg"
-                    alt="moonshot pirates global finalist"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>moonshot pirates global finalist</strong>
-                  <p className="mt-2">
-                    a competition to tackle pressing global
-                    <br />
-                    issues through innovative thinking
-                  </p>
-                </div>
-              </div>
-              {/* Award/Press Box 4 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/conrad.png"
-                    alt="Conrad Challenge"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>conrad innovator</strong>
-                  <p className="mt-2">
-                    distinction for a standout
-                    <br />
-                    innovation stage proposal
-                  </p>
-                </div>
-              </div>
-              {/* Award/Press Box 5 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/swissgirls.png"
-                    alt="featured on swiss venture girls"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>featured on swiss venture girls</strong>
-                  <p className="mt-2">
-                    interviewed about our
-                    <br />
-                    greenably initiative
-                  </p>
-                </div>
-              </div>
-              {/* Award/Press Box 6 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/env-expo.png"
-                    alt="env-expo award"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>
-                    champion at bangladesh
-                    <br />
-                    national environment expo
-                  </strong>
-                  <p className="mt-2">represented greenably team</p>
-                </div>
-              </div>
-              {/* Award/Press Box 7 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/nyas.png"
-                    alt="nyas award"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>
-                    member at new york
-                    <br />
-                    academy of sciences
-                  </strong>
-                  <p className="mt-2">worked on a space habitation project</p>
-                </div>
-              </div>
-              {/* Award/Press Box 8 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/cso.png"
-                    alt="cso award"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>
-                    semi finalist at intl
-                    <br />
-                    climate science olympiad
-                  </strong>
-                  <p className="mt-2">
-                    proposed innovative solutions to climate crisis
-                  </p>
-                </div>
-              </div>
-              {/* Award/Press Box 9 */}
-              <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-                <div className="w-64 h-40 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-                  <Image
-                    src="/asset/codeinplace.png"
-                    alt="codeinplace award"
-                    width={256}
-                    height={160}
-                    className="w-full h-full object-cover m-0 p-0"
-                    style={{ display: 'block' }}
-                  />
-                </div>
-                <div className="text-[#eaf7e2] text-base text-center">
-                  <strong>stanford code in place</strong>
-                  <p className="mt-2">attended 2024 & 2025 cohort</p>
-                </div>
-              </div>
-            </div>
-            </section>
-            <section id="thoughts" className="mb-24 pt-24">
-              <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
-                my thoughts
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
-                <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
-                  <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
-                    how i mistakenly ended up in tech
-                  </div>
-                  <p className="text-[#eaf7e2] text-base text-center mb-4">
-                    I didn&apos;t grow up thinking I&apos;d be in tech.
-                  </p>
-                  <a
-                    href="/articles/how-i-ended-up-in-tech"
-                    className="text-[#b6e3a7] hover:underline font-medium"
-                  >
-                    read more
-                  </a>
-                </div>
-                <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
-                  <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
-                    human experience
-                  </div>
-                  <p className="text-[#eaf7e2] text-base text-center mb-4">
-                    &quot;human experience&quot; isn&apos;t about
-                    <br />
-                    perfect designs or impressive builds.
-                  </p>
-                  <a
-                    href="/articles/human-experience"
-                    className="text-[#b6e3a7] hover:underline font-medium"
-                  >
-                    read more
-                  </a>
-                </div>
-                <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px]">
-                  <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">
-                    the homes we make online
-                  </div>
-                  <p className="text-[#eaf7e2] text-base text-center mb-4">
-                    the internet wasn&apos;t just connection.
-                    <br />
-                    it was belonging.
-                  </p>
-                  <a
-                    href="/articles/homes-we-make-online"
-                    className="text-[#b6e3a7] hover:underline font-medium"
-                  >
-                    read more
-                  </a>
-                </div>
-              </div>
-            </section>
-            <section id="about" className="mb-24 pt-24">
-            <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6">
-              more about me
-            </h2>
-            <ul className="list-disc list-inside text-[#eaf7e2] text-lg space-y-2 mt-4">
-              <li>i&apos;m 17, a senior in high school</li>
-              <li>i&apos;m from bangladesh and based in the us</li>
-              <li>i love tech, engineering, design</li>
-              <li>i like when things give out the human feeling</li>
-            </ul>
-          </section>
-            <section id="contact" className="mb-24 pt-24">
+      {/* Contact Me Section */}
+  <div style={{position: 'absolute', left: 0, width: '100vw'}} className="border-t border-[#232526]" />
+  <section className="w-full flex flex-col items-start justify-start bg-black pt-12 pb-24 px-8 md:px-32">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>contact me</h2>
+        <form className="w-full max-w-xl flex flex-col gap-6 items-start">
+          <label className="text-[#ededed] text-base font-medium mb-0" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>Email address</label>
+          <input type="email" placeholder="your@email.com" className="bg-black border border-[#232526] rounded-lg px-4 py-2 text-white focus:outline-none focus:border-[#eaf7e2] w-full font-sans mb-1" required />
+          <label className="text-[#ededed] text-base font-medium mb-0 mt-1" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>Message</label>
+          <textarea placeholder="Type your message here..." className="bg-black border border-[#232526] rounded-lg px-4 py-2 text-white focus:outline-none focus:border-[#eaf7e2] min-h-[120px] w-full font-sans mb-1" required />
+          <button type="submit" className="mt-6 bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition self-start" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>submit</button>
+        </form>
+      </section>
             </section>
           </section>
         </div>
       </main>
       <footer className="w-full bg-black py-10 flex flex-col items-center border-t border-[#232323]">
       <div className="flex flex-row gap-8 mb-4 text-[#ededed] text-lg font-medium">
-        <a href="#about" className="hover:underline">about</a>
-        <a href="#things" className="hover:underline">projects</a>
-        <a href="#awards" className="hover:underline">awards</a>
-        <a href="#thoughts" className="hover:underline">blog</a>
+        <a href="/" className="hover:underline">about</a>
+        <a href="/projects" className="hover:underline">projects</a>
+        <Link href="/awards" className="hover:underline">awards</Link>
+        <Link href="/blogs" className="hover:underline">blog</Link>
       </div>
       <div className="flex flex-row gap-4 mb-4">
         <a href="https://instagram.com/afiaava" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition">

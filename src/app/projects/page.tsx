@@ -37,7 +37,6 @@ export default function Projects() {
 					a collection of things I&apos;ve been creating
 				</p>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mx-auto">
-					{/* Example Project Card */}
 								<ProjectCard
 									logo="/asset/visionly.png"
 									title="visionly"
