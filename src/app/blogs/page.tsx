@@ -11,7 +11,7 @@ export default function Blogs() {
           </span>
         </div>
         <div className="flex items-center gap-4">
-          <a href="/" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</a>
+          <Link href="/about" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</Link>
           <a href="/projects" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">projects</a>
           <Link href="/awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</Link>
           <Link href="/blogs" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</Link>

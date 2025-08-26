@@ -18,7 +18,7 @@ export default function Awards() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black px-0 pt-0">
+  <div className="min-h-screen bg-black px-0 pt-0">
       <nav className="w-full flex items-center justify-between px-8 md:px-32 py-4 bg-black/80 border-b border-[#232323] sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <span className="bg-[#232323] rounded-lg px-2 py-1 flex items-center text-white font-semibold text-lg ml-8">
@@ -26,10 +26,10 @@ export default function Awards() {
           </span>
         </div>
         <div className="flex items-center gap-4">
-          <a href="#about" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</a>
+          <Link href="/about" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</Link>
           <a href="/projects" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">projects</a>
           <Link href="/awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</Link>
-          <a href="#thoughts" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</a>
+          <Link href="/blogs" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</Link>
           <a
             href="https://github.com/Afia-Ava"
             target="_blank"
@@ -43,7 +43,15 @@ export default function Awards() {
           </a>
         </div>
       </nav>
-      <h2 className="text-3xl font-bold text-[#eaf7e2] mb-6 text-center pt-24">awards & press</h2>
+      {/* Caption Section - styled like projects page */}
+      <div className="w-full flex flex-col items-center justify-center pt-24 pb-4">
+        <h1 className="text-center text-3xl md:text-5xl font-bold tracking-tight text-white mb-2 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
+          awards & press
+        </h1>
+        <p className="text-center text-base md:text-lg text-[#eaf7e2] mb-10" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
+          some recognitions along the way
+        </p>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto max-w-7xl">
         {/* Award/Press Box 1 */}
         <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">

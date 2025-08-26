@@ -14,8 +14,8 @@ export default function Projects() {
 				<div className="flex items-center gap-4">
 					<Link href="/#about" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">about</Link>
 					<Link href="/projects" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">projects</Link>
-					<Link href="/#awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</Link>
-					<Link href="/#thoughts" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</Link>
+					  <Link href="/awards" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">awards</Link>
+					  <Link href="/blogs" className="text-white/80 hover:text-white px-3 py-1 rounded transition font-medium">blog</Link>
 					<a
 						href="https://github.com/Afia-Ava"
 						target="_blank"
@@ -49,14 +49,14 @@ export default function Projects() {
 									title="outloud"
 									description="document your journey while building things"
 									ctaLabel="explore"
-									ctaLink="#"
+									ctaLink="https://afia-ava.github.io/outloud/"
 								/>
 								<ProjectCard
 									logo="/asset/flashback.png"
 									title="flashback"
 									description="make shared image folder maps with friends worldwide"
 									ctaLabel="explore"
-									ctaLink="#"
+									ctaLink="https://afia-ava.github.io/flashback/"
 								/>
 				</div>
 			</main>
