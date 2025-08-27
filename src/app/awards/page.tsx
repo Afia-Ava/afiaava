@@ -53,92 +53,92 @@ export default function Awards() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto max-w-7xl">
   {/* Award/Press Box 1 */}
-        <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-          <div className="w-72 h-44 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-            <Image src="/asset/technovation.png" alt="Technovation North America Regional Honoree" width={288} height={176} className="w-full h-full object-cover m-0 p-0" style={{ display: 'block' }} />
+        <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+          <div className="w-64 h-40 md:w-80 md:h-52 bg-[#232323] rounded-xl flex items-center justify-center overflow-hidden mb-4">
+            <Image src="/asset/technovation.png" alt="Technovation North America Regional Honoree" width={288} height={176} className="object-cover w-full h-full rounded-xl" />
           </div>
-          <div className="text-[#eaf7e2] text-base text-center">
-            <strong>technovation north america<br />regional honoree</strong>
+          <div className="text-[#eaf7e2] text-base text-left w-full">
+            <div className="font-semibold text-lg mb-2">technovation north america<br />regional honoree</div>
             <p className="mt-2">created READelivery app for a non profit<br />delivering free-books to low income families</p>
           </div>
         </div>
   {/* Award/Press Box 2 */}
-        <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-          <div className="w-72 h-44 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-            <Image src="/asset/ncwit.jpeg" alt="NCWIT National Honorable Mention & Ohio Winner" width={288} height={176} className="w-full h-full object-cover m-0 p-0" style={{ display: 'block' }} />
+          <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+            <div className="w-64 h-40 md:w-80 md:h-52 bg-[#232323] rounded-xl flex items-center justify-center overflow-hidden mb-4">
+              <Image src="/asset/ncwit.jpeg" alt="NCWIT National Honorable Mention & Ohio Winner" width={288} height={176} className="object-cover w-full h-full rounded-xl" />
+            </div>
+            <div className="text-[#eaf7e2] text-base text-left w-full">
+              <div className="font-semibold text-lg mb-2">ncwit national honorable<br />mention & ohio winner</div>
+              <p className="mt-2">a distinction highlighting my<br />commitment to advancing technology</p>
+            </div>
           </div>
-          <div className="text-[#eaf7e2] text-base text-center">
-            <strong>ncwit national honorable<br />mention & ohio winner</strong>
-            <p className="mt-2">a distinction highlighting my<br />commitment to advancing technology</p>
-          </div>
-        </div>
   {/* Award/Press Box 3 */}
-        <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-          <div className="w-72 h-44 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-            <Image src="/asset/msp.jpg" alt="moonshot pirates global finalist" width={288} height={176} className="w-full h-full object-cover m-0 p-0" style={{ display: 'block' }} />
+        <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+          <div className="w-64 h-40 md:w-80 md:h-52 bg-[#232323] rounded-xl flex items-center justify-center overflow-hidden mb-4">
+            <Image src="/asset/msp.jpg" alt="moonshot pirates global finalist" width={288} height={176} className="object-cover w-full h-full rounded-xl" />
           </div>
-          <div className="text-[#eaf7e2] text-base text-center">
-            <strong>moonshot pirates global finalist</strong>
+          <div className="text-[#eaf7e2] text-base text-left w-full">
+            <div className="font-semibold text-lg mb-2">moonshot pirates global finalist</div>
             <p className="mt-2">a competition to tackle pressing global<br />issues through innovative thinking</p>
           </div>
         </div>
   {/* Award/Press Box 4 */}
-        <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-          <div className="w-72 h-44 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-            <Image src="/asset/conrad.png" alt="Conrad Challenge" width={288} height={176} className="w-full h-full object-cover m-0 p-0" style={{ display: 'block' }} />
+        <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+          <div className="w-64 h-40 md:w-80 md:h-52 bg-[#232323] rounded-xl flex items-center justify-center overflow-hidden mb-4">
+            <Image src="/asset/conrad.png" alt="Conrad Challenge" width={288} height={176} className="object-cover w-full h-full rounded-xl" />
           </div>
-          <div className="text-[#eaf7e2] text-base text-center">
-            <strong>conrad innovator</strong>
+          <div className="text-[#eaf7e2] text-base text-left w-full">
+            <div className="font-semibold text-lg mb-2">conrad innovator</div>
             <p className="mt-2">distinction for a standout<br />innovation stage proposal</p>
           </div>
         </div>
   {/* Award/Press Box 5 */}
-        <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-          <div className="w-72 h-44 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-            <Image src="/asset/swissgirls.png" alt="featured on swiss venture girls" width={288} height={176} className="w-full h-full object-cover m-0 p-0" style={{ display: 'block' }} />
+        <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+          <div className="w-64 h-40 md:w-80 md:h-52 bg-[#232323] rounded-xl flex items-center justify-center overflow-hidden mb-4">
+            <Image src="/asset/swissgirls.png" alt="featured on swiss venture girls" width={288} height={176} className="object-cover w-full h-full rounded-xl" />
           </div>
-          <div className="text-[#eaf7e2] text-base text-center">
-            <strong>featured on swiss venture girls</strong>
+          <div className="text-[#eaf7e2] text-base text-left w-full">
+            <div className="font-semibold text-lg mb-2">featured on swiss venture girls</div>
             <p className="mt-2">interviewed about our<br />greenably initiative</p>
           </div>
         </div>
   {/* Award/Press Box 6 */}
-        <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-          <div className="w-72 h-44 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-            <Image src="/asset/env-expo.png" alt="env-expo award" width={288} height={176} className="w-full h-full object-cover m-0 p-0" style={{ display: 'block' }} />
+        <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+          <div className="w-64 h-40 md:w-80 md:h-52 bg-[#232323] rounded-xl flex items-center justify-center overflow-hidden mb-4">
+            <Image src="/asset/env-expo.png" alt="env-expo award" width={288} height={176} className="object-cover w-full h-full rounded-xl" />
           </div>
-          <div className="text-[#eaf7e2] text-base text-center">
-            <strong>champion at bangladesh<br />national environment expo</strong>
+          <div className="text-[#eaf7e2] text-base text-left w-full">
+            <div className="font-semibold text-lg mb-2">champion at bangladesh<br />national environment expo</div>
             <p className="mt-2">represented greenably team</p>
           </div>
         </div>
   {/* Award/Press Box 7 */}
-        <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-          <div className="w-72 h-44 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-            <Image src="/asset/nyas.png" alt="nyas award" width={288} height={176} className="w-full h-full object-cover m-0 p-0" style={{ display: 'block' }} />
+        <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+          <div className="w-64 h-40 md:w-80 md:h-52 bg-[#232323] rounded-xl flex items-center justify-center overflow-hidden mb-4">
+            <Image src="/asset/nyas.png" alt="nyas award" width={288} height={176} className="object-cover w-full h-full rounded-xl" />
           </div>
-          <div className="text-[#eaf7e2] text-base text-center">
-            <strong>member at new york<br />academy of sciences</strong>
+          <div className="text-[#eaf7e2] text-base text-left w-full">
+            <div className="font-semibold text-lg mb-2">member at new york<br />academy of sciences</div>
             <p className="mt-2">worked on a space habitation project</p>
           </div>
         </div>
   {/* Award/Press Box 8 */}
-        <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-          <div className="w-72 h-44 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-            <Image src="/asset/cso.png" alt="cso award" width={288} height={176} className="w-full h-full object-cover m-0 p-0" style={{ display: 'block' }} />
+        <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+          <div className="w-64 h-40 md:w-80 md:h-52 bg-[#232323] rounded-xl flex items-center justify-center overflow-hidden mb-4">
+            <Image src="/asset/cso.png" alt="cso award" width={288} height={176} className="object-cover w-full h-full rounded-xl" />
           </div>
-          <div className="text-[#eaf7e2] text-base text-center">
-            <strong>semi finalist at intl<br />climate science olympiad</strong>
+          <div className="text-[#eaf7e2] text-base text-left w-full">
+            <div className="font-semibold text-lg mb-2">semi finalist at intl<br />climate science olympiad</div>
             <p className="mt-2">proposed innovative solutions to climate crisis</p>
           </div>
         </div>
   {/* Award/Press Box 9 */}
-        <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-4 flex flex-col items-center">
-          <div className="w-72 h-44 bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center mb-4">
-            <Image src="/asset/codeinplace.png" alt="codeinplace award" width={288} height={176} className="w-full h-full object-cover m-0 p-0" style={{ display: 'block' }} />
+        <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+          <div className="w-64 h-40 md:w-80 md:h-52 bg-[#232323] rounded-xl flex items-center justify-center overflow-hidden mb-4">
+            <Image src="/asset/codeinplace.png" alt="codeinplace award" width={288} height={176} className="object-cover w-full h-full rounded-xl" />
           </div>
-          <div className="text-[#eaf7e2] text-base text-center">
-            <strong>stanford code in place</strong>
+          <div className="text-[#eaf7e2] text-base text-left w-full">
+            <div className="font-semibold text-lg mb-2">stanford code in place</div>
             <p className="mt-2">attended 2024 & 2025 cohort</p>
           </div>
         </div>

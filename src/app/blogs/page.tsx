@@ -36,20 +36,23 @@ export default function Blogs() {
           <p className="text-center text-base md:text-lg text-[#bdbdbd] mb-10" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
             what's been on my mind lately
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-8">
-            <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px] max-w-xs mx-auto">
-              <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">how i mistakenly ended up in tech</div>
-              <p className="text-[#eaf7e2] text-base text-center mb-4">I didn&apos;t grow up thinking I&apos;d be in tech.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto max-w-7xl">
+            {/* Blog Box 1 */}
+            <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+              <div className="font-semibold text-lg mb-2 text-left text-[#eaf7e2]">how i mistakenly ended up in tech</div>
+              <p className="text-[#eaf7e2] text-base text-left mb-4">I didn&apos;t grow up thinking I&apos;d be in tech.</p>
               <a href="/articles/how-i-ended-up-in-tech" className="text-[#b6e3a7] hover:underline font-medium">read more</a>
             </div>
-            <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px] max-w-xs mx-auto">
-              <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">human experience</div>
-              <p className="text-[#eaf7e2] text-base text-center mb-4">&quot;human experience&quot; isn&apos;t about<br />perfect designs or impressive builds.</p>
+            {/* Blog Box 2 */}
+            <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+              <div className="font-semibold text-lg mb-2 text-left text-[#eaf7e2]">human experience</div>
+              <p className="text-[#eaf7e2] text-base text-left mb-4">&quot;human experience&quot; isn&apos;t about<br />perfect designs or impressive builds.</p>
               <a href="/articles/human-experience" className="text-[#b6e3a7] hover:underline font-medium">read more</a>
             </div>
-            <div className="bg-black/80 border-2 border-[#eaf7e2] rounded-xl shadow-xl p-6 flex flex-col items-center min-h-[180px] max-w-xs mx-auto">
-              <div className="text-[#eaf7e2] text-lg font-semibold mb-2 text-center">the homes we make online</div>
-              <p className="text-[#eaf7e2] text-base text-center mb-4">the internet wasn&apos;t just connection.<br />it was belonging.</p>
+            {/* Blog Box 3 */}
+            <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+              <div className="font-semibold text-lg mb-2 text-left text-[#eaf7e2]">the homes we make online</div>
+              <p className="text-[#eaf7e2] text-base text-left mb-4">the internet wasn&apos;t just connection.<br />it was belonging.</p>
               <a href="/articles/homes-we-make-online" className="text-[#b6e3a7] hover:underline font-medium">read more</a>
             </div>
           </div>
