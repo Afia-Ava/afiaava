@@ -4,17 +4,10 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function Awards() {
-  const [showNav, setShowNav] = useState(true);
-  const [showScrollTop, setShowScrollTop] = useState(false);
+  // Removed unused variables
 
   useEffect(() => {
-    const onScroll = () => {
-      const scrollY = window.scrollY;
-      setShowNav(scrollY < 200);
-      setShowScrollTop(scrollY > 300);
-    };
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+  // Removed unused scroll logic
   }, []);
 
   return (
@@ -22,7 +15,7 @@ export default function Awards() {
       <nav className="w-full flex items-center justify-between px-8 md:px-32 py-4 bg-black/80 border-b border-[#232323] sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <span className="bg-[#232323] rounded-lg px-2 py-1 flex items-center text-white font-semibold text-lg ml-8">
-            <a href="/" className="focus:outline-none">afiaava</a>
+            <Link href="/" className="focus:outline-none">afiaava</Link>
           </span>
         </div>
         <div className="flex items-center gap-4">
