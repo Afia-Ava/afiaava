@@ -34,7 +34,7 @@ export default function Blogs() {
             my thoughts
           </h1>
           <p className="text-center text-base md:text-lg text-[#bdbdbd] mb-10" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
-            what's been on my mind lately
+              what&apos;s been on my mind lately
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto max-w-7xl">
             {/* Blog Box 1 */}

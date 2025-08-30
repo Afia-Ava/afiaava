@@ -36,12 +36,18 @@ export default function About() {
           welcome to my world
         </p>
         <div className="max-w-2xl mx-auto text-[#ededed] text-base md:text-lg leading-relaxed text-left" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>
-          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>Hi, I’m Afia. I’m 17 and I love building things.</p>
-          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>From small coding experiments at home to projects that reach real people, I’ve spent a lot of time figuring out how ideas turn into something useful.</p>
-          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>Along the way, I’ve failed a lot but those failures have taught me more than any success ever could.</p>
+          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>Hi, I&apos;m Afia. I&apos;m 17 and I love building things.</p>
+          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>From small coding experiments at home to projects that reach real people, I&apos;ve spent a lot of time figuring out how ideas turn into something useful.</p>
+          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>Along the way, I&apos;ve failed a lot but those failures have taught me more than any success ever could.</p>
           <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>I was born in Bangladesh and now live in the United States, which has shaped the way I see the world and approach problems.</p>
-          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>I’m curious about technology, engineering, and how people interact with the things we create.</p>
-          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>I enjoy exploring ideas, trying them out, and learning from what works, and what doesn’t.</p>
+          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>I&apos;m curious about technology, engineering, and how people interact with the things we create.</p>
+          <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>I enjoy exploring ideas, trying them out, and learning from what works, and what doesn&apos;t.</p>
+            <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>Hi, I&apos;m Afia. I&apos;m 17 and I love building things.</p>
+            <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>From small coding experiments at home to projects that reach real people, I&apos;ve spent a lot of time figuring out how ideas turn into something useful.</p>
+            <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>Along the way, I&apos;ve failed a lot but those failures have taught me more than any success ever could.</p>
+            <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>I was born in Bangladesh and now live in the United States, which has shaped the way I see the world and approach problems.</p>
+            <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>I&apos;m curious about technology, engineering, and how people interact with the things we create.</p>
+            <p className="mb-3" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>I enjoy exploring ideas, trying them out, and learning from what works, and what doesn&apos;t.</p>
         </div>
   <div className="h-32" />
       </main>
@@ -53,7 +59,7 @@ export default function About() {
           <Link href="/blogs" className="hover:underline font-normal">blog</Link>
         </div>
         <div className="flex flex-row gap-4 mb-4">
-          <a href="https://x.com/aafia_ava" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition">
+          <a href="https://x.com/aafia_ava" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition" aria-label="X">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.53 3H21L13.47 10.62L22.25 21H15.97L10.77 14.67L4.97 21H1L9.03 12.82L0.75 3H7.18L12 8.73L17.53 3ZM16.32 19H18.13L7.75 5.08H5.81L16.32 19Z"/></svg>
           </a>
           <a href="https://www.instagram.com/afia.ava/" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition">
