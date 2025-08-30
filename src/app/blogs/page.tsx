@@ -38,22 +38,25 @@ export default function Blogs() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto max-w-7xl">
             {/* Blog Box 1 */}
-            <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+            <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-4 flex flex-col items-start min-h-[200px] relative">
               <div className="font-semibold text-lg mb-2 text-left text-[#eaf7e2]">how i mistakenly ended up in tech</div>
               <p className="text-[#eaf7e2] text-base text-left mb-4">I didn&apos;t grow up thinking I&apos;d be in tech.</p>
               <a href="/articles/how-i-ended-up-in-tech" className="text-[#b6e3a7] hover:underline font-medium">read more</a>
+            <div className="mt-2 text-xs text-[#bdbdbd]"><span className="italic">August 29, 2025</span></div>
             </div>
             {/* Blog Box 2 */}
-            <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+            <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-4 flex flex-col items-start min-h-[200px] relative">
               <div className="font-semibold text-lg mb-2 text-left text-[#eaf7e2]">human experience</div>
               <p className="text-[#eaf7e2] text-base text-left mb-4">&quot;human experience&quot; isn&apos;t about<br />perfect designs or impressive builds.</p>
               <a href="/articles/human-experience" className="text-[#b6e3a7] hover:underline font-medium">read more</a>
+            <div className="mt-2 text-xs text-[#bdbdbd]"><span className="italic">August 29, 2025</span></div>
             </div>
             {/* Blog Box 3 */}
-            <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-6 flex flex-col items-start min-h-[320px] relative">
+            <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg p-4 flex flex-col items-start min-h-[200px] relative">
               <div className="font-semibold text-lg mb-2 text-left text-[#eaf7e2]">the homes we make online</div>
               <p className="text-[#eaf7e2] text-base text-left mb-4">the internet wasn&apos;t just connection.<br />it was belonging.</p>
               <a href="/articles/homes-we-make-online" className="text-[#b6e3a7] hover:underline font-medium">read more</a>
+            <div className="mt-2 text-xs text-[#bdbdbd]"><span className="italic">August 29, 2025</span></div>
             </div>
           </div>
         </section>
