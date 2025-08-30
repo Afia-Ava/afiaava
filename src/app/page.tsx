@@ -55,7 +55,7 @@ export default function Home() {
         </div>
         <div className="flex-1 flex items-center justify-center p-8 md:p-16">
           <div className="bg-[#181818] rounded-2xl shadow-lg flex items-center justify-center w-full h-72 md:h-96 max-w-md border border-[#232526] overflow-hidden">
-            <Image src="/asset/afiaava.jfif" alt="Afia Ava" width={320} height={320} className="object-cover w-full h-full rounded-2xl" />
+            <Image src="/asset/afiaava1.jpg" alt="Afia Ava" width={320} height={320} className="object-cover w-full h-full rounded-2xl" />
           </div>
         </div>
       </section>
