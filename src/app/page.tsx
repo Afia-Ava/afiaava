@@ -1,15 +1,14 @@
 "use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Carousel from './Carousel';
 
 
 
 export default function Home() {
-  // Removed unused variables
-
   useEffect(() => {
-  // Removed unused scroll logic
   }, []);
 
   return (
@@ -40,63 +39,46 @@ export default function Home() {
       </nav>
   <main className="flex flex-col min-h-screen bg-black px-0 pt-0">
   {/* Hero Section */}
-  <section className="w-full flex flex-col md:flex-row items-stretch justify-center bg-black border-b border-[#232526] pt-24 px-8 md:px-32" style={{ minHeight: '60vh' }}>
+  <section className="w-full flex flex-col md:flex-row items-stretch justify-center bg-black pt-24 px-8 md:px-32" style={{ minHeight: '60vh' }}>
   <div className="flex-1 flex flex-col justify-center px-8 md:px-20 py-16">
           <h1 className="text-left text-5xl md:text-7xl font-bold tracking-tight text-white mb-4 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
             afia ava<br />
             <span className="text-[#bdbdbd] font-normal">building things. learning as i go.</span>
           </h1>
-          <p className="text-left text-lg md:text-xl text-[#ededed] max-w-2xl mb-8 mt-2 whitespace-nowrap" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
-            i build things <span className="italic">i care about</span> and write about <span className="italic">what i learn</span>.
-          </p>
-          <div className="flex flex-row gap-4 mt-4">
-            <a href="#contact" className="bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition">let&apos;s connect</a>
-          </div>
         </div>
         <div className="flex-1 flex items-center justify-center p-8 md:p-16">
           <div className="bg-[#181818] rounded-2xl shadow-lg flex items-center justify-center w-full h-72 md:h-96 max-w-md border border-[#232526] overflow-hidden">
-            <Image src="/asset/afiaava1.jpg" alt="Afia Ava" width={320} height={320} className="object-cover w-full h-full rounded-2xl" />
+            <Image src="/asset/afiaa.jpg" alt="Afia Ava" width={320} height={320} className="object-cover w-full h-full rounded-2xl" />
           </div>
         </div>
       </section>
   {/* Main Content */}
+  {/* Carousel Showcase */}
+  <div className="w-full flex flex-col items-center justify-center pt-40 pb-0 px-4 md:px-0">
+    <Carousel />
+  </div>
   <div className="flex flex-row w-full max-w-7xl gap-8 md:gap-20 items-start md:items-stretch mx-auto px-4 pt-12">
-          <section className="flex-1 flex flex-col justify-center py-0 md:py-0 md:ml-4 lg:ml-8">
-            <section id="things" className="mb-24 pt-24">
-  {/* Story Section */}
-  <section className="w-full flex flex-col md:flex-row items-center justify-center bg-black pt-0 pb-2 px-8 md:px-32" style={{ minHeight: '24vh', marginTop: 0 }}>
-  <div className="flex-1 flex items-start justify-start p-0 md:p-0 max-w-md" style={{alignSelf: 'flex-start', marginTop: '0px'}}>
-          <Image src="/asset/afiaava2.jpg" alt="Afia Ava 2" width={320} height={320} className="object-cover rounded-2xl" />
-        </div>
-        <div className="flex-1 flex flex-col justify-center items-start px-4 md:px-8 py-8 max-w-xl">
-          <h2 className="text-left text-5xl md:text-6xl font-bold tracking-tight text-white mb-4 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', marginTop: '-32px', marginBottom: '16px' }}>
-            <span className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-2 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
-              the story behind.
-            </span>
-          </h2>
-          <div className="text-[#bdbdbd] text-lg font-medium mb-2">Hi, I’m Afia.</div>
-          <div className="text-[#ededed] text-sm md:text-base mb-4 max-w-xl space-y-4" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>
-            <p>I’m 17, and I love to build things. From small coding projects at home to initiatives that actually reached people, I’ve spent my life figuring out how to turn ideas into real products.</p>
-            <p>I’ve failed a lot, learned even more, and now I’m sharing what I’ve discovered so others can build faster, smarter, and with fewer mistakes.</p>
+    <section className="flex-1 flex flex-col justify-center py-0 md:py-0 md:ml-4 lg:ml-8">
+      <section id="things" className="mb-24 pt-12">
+        {/* Story Section */}
+        <section className="w-full flex flex-col items-start justify-center bg-black pt-0 pb-2 px-8 md:px-32" style={{ minHeight: '24vh', marginTop: 0 }}>
+          <div className="flex-1 flex flex-col justify-center items-start px-4 md:px-8 py-8 max-w-xl text-left">
+            <h2 className="text-left text-5xl md:text-6xl font-bold tracking-tight text-white mb-4 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', marginTop: '-32px', marginBottom: '16px' }}>
+              <span className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-2 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
+                a glimpse inside.
+              </span>
+            </h2>
+            <div className="text-[#ededed] text-base md:text-lg font-normal mb-2 text-left" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>hey, i’m excited to welcome you to the little corner of my world.</div>
+            <div className="text-[#ededed] text-base md:text-lg mb-4 max-w-xl space-y-4 text-left" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', fontWeight: 400, letterSpacing: '-0.02em', lineHeight: '1.7' }}>
+              <p>i’m afia, and i love creating things. sometimes it’s an app, sometimes a story, or something in between. i’ve always been curious about how things work and why people feel the way they do. that curiosity led me to projects that mix code, design, and empathy. along the way, i’ve had the chance to collaborate with incredible peers and take on roles that taught me what leadership really means.</p>
+              <p>i’m fascinated by the intersection of technology and humanity, and i’m looking forward to exploring this space more and sharing what i learn along the way.</p>
+            </div>
+            <Link href="/about" className="mt-2 bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition">read my story</Link>
           </div>
-          <Link href="/about" className="mt-2 bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition">read my story</Link>
-        </div>
+        </section>
       </section>
-      {/* Contact Me Section */}
-  <div className="border-t border-[#232526]" style={{position: 'absolute', left: 0, right: 0, width: '100%', margin: 0, marginTop: '2cm', padding: 0, height: '1px'}} />
-  <section className="w-full flex flex-col items-start justify-start bg-black pt-12 pb-24 px-8 md:px-32" style={{marginTop: '3cm'}}>
-  <h2 id="contact" className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif', scrollMarginTop: '30vh' }}>contact me</h2>
-        <form className="w-full max-w-xl flex flex-col gap-6 items-start">
-          <label className="text-[#ededed] text-base font-medium mb-0" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>Email address</label>
-          <input type="email" placeholder="your@email.com" className="bg-black border border-[#232526] rounded-lg px-4 py-2 text-white focus:outline-none focus:border-[#eaf7e2] w-full font-sans mb-1" required />
-          <label className="text-[#ededed] text-base font-medium mb-0 mt-1" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>Message</label>
-          <textarea placeholder="Type your message here..." className="bg-black border border-[#232526] rounded-lg px-4 py-2 text-white focus:outline-none focus:border-[#eaf7e2] min-h-[120px] w-full font-sans mb-1" required />
-          <button type="submit" className="mt-6 bg-[#181818] border border-[#333] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#232526] transition self-start" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>submit</button>
-        </form>
-      </section>
-            </section>
-          </section>
-        </div>
+    </section>
+  </div>
       </main>
       <footer className="w-full bg-black py-10 flex flex-col items-center border-t border-[#232323]">
       <div className="flex flex-row gap-8 mb-4 text-[#ededed] text-lg font-medium">
