@@ -1,10 +1,10 @@
 "use client";
 import Link from 'next/link';
-import Image from 'next/image';
 
-export default function Blogs() {
+export default function CreativityBlog() {
   return (
-  <div className="min-h-screen bg-black flex flex-col">
+    <div className="min-h-screen bg-black flex flex-col">
+      {/* Nav */}
       <nav className="w-full flex items-center justify-between px-8 md:px-32 py-4 bg-black/80 border-b border-[#232323] sticky top-0 z-50">
         <div className="flex items-center gap-2">
           <span className="bg-[#232323] rounded-lg px-2 py-1 flex items-center text-white font-semibold text-lg ml-8">
@@ -29,34 +29,40 @@ export default function Blogs() {
           </a>
         </div>
       </nav>
-  <main className="flex flex-col min-h-screen bg-black px-0 pt-0 pb-36 flex-1">
-        <section className="mb-24 pt-24">
-          <h1 className="text-center text-3xl md:text-5xl font-bold tracking-tight text-white mb-2 leading-tight" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
-            my thoughts
-          </h1>
-          <p className="text-center text-base md:text-lg text-[#bdbdbd] mb-10" style={{ fontFamily: 'Inter, var(--font-geist-sans), Arial, sans-serif' }}>
-              what&apos;s been on my mind lately
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto max-w-7xl">
-            <Link href="/blogs/what-is-creativity-really" className="group">
-              <div className="bg-[#18181b] border border-[#232323] rounded-2xl shadow-lg overflow-hidden">
-                <div className="relative w-full aspect-[2/1] bg-[#0f0f0f]">
-                  <Image src="/asset/Creativity.png" alt="blog preview" fill className="object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
-                </div>
-                <div className="p-4">
-                    <h3
-                      className="text-white font-semibold text-lg mb-1"
-                      style={{ fontFamily: 'var(--font-geist-sans), Inter, Segoe UI, Arial, sans-serif' }}
-                    >
-                      What Is Creativity, Really?
-                    </h3>
-                  <p className="text-[#bdbdbd] text-sm">October 28, 2025</p>
-                </div>
-              </div>
-            </Link>
+
+  {/* Main */}
+  <main className="flex-1 bg-black px-8 md:px-32 pt-16 pb-36">
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-6">
+            <Link href="/blogs" className="text-[#bdbdbd] hover:text-white text-sm">← back to blog</Link>
           </div>
-        </section>
+
+          <h1
+            className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-3 leading-tight"
+            style={{ fontFamily: 'var(--font-geist-sans), Inter, Segoe UI, Arial, sans-serif' }}
+          >
+            What Is Creativity, Really?
+          </h1>
+          <p className="text-[#bdbdbd] text-sm mb-10" style={{ fontFamily: 'var(--font-geist-sans), Inter, Segoe UI, Arial, sans-serif' }}>October 28, 2025</p>
+          <article className="prose prose-invert max-w-none" style={{ fontFamily: 'var(--font-geist-sans), Inter, Segoe UI, Arial, sans-serif' }}>
+            <p>A screenwriter cold-emailed Mark Cuban asking for money to 3D-print rockets. Cuban wired half a million dollars within the week.</p>
+            <p>Sounds like luck, right? Like one of those stories where someone just happened to be in the right place at the right time. But that&apos;s not what happened at all.</p>
+            <p>Tim Ellis had spent years as a storyteller, writing screenplays and building narratives. Then he interned at Blue Origin and saw how rockets were made. Thousands of parts. Years of assembly. Billions of dollars. And he started asking a different kind of question. What if you didn&apos;t build them that way? What if you could 3D-print them instead?</p>
+            <p>Most people would&apos;ve stopped there. It&apos;s a cool thought experiment. But Tim kept going. He teamed up with Jordan Noone and pitched the idea to Mark Cuban. Not because he had all the answers, but because he had a question worth exploring.</p>
+            <p>That&apos;s where it starts. Curiosity. The &quot;what if&quot; that won&apos;t leave you alone. But curiosity alone doesn&apos;t build rockets. Tim and Jordan got their funding and rented a small space. They assembled a team. Started printing prototypes. And immediately hit a wall. Prints warped. Engines misfired. There were thousands of ways for this to fail, and they were finding all of them. Most people would&apos;ve called it impossible. But Tim saw something else. He saw constraints. And constraints force you to think differently.</p>
+            <p>They couldn&apos;t build rockets the traditional way. They didn&apos;t have the resources or the time. So they had to simplify. Instead of thousands of parts, what if they printed rockets almost as single pieces? Fewer parts meant faster builds, lower costs, and more flexibility. The limitation became the innovation. And as they kept testing, something started happening. Patterns emerged. Certain designs held up better under stress. Some engine configurations were more reliable than others. Each test gave them information. Each failure pointed them somewhere new.</p>
+            <p>That&apos;s when iteration kicks in. Hundreds of prints. Thousands of engine tests. Every failure wasn&apos;t a setback. It was data. And data compounds.</p>
+            <p>After years of this, on March 22, 2023, Terran 1 launched. The world&apos;s first nearly fully 3D-printed rocket. It didn&apos;t make it to orbit because of a second-stage issue, but it flew. And for Tim and his team, that was enough. Every failed prototype, every warped print, every late night had led to this.</p>
+            <p>Here&apos;s what I realized watching stories like this. Breakthroughs aren&apos;t magic. They&apos;re not random gifts that land on genius people. They follow a pattern.</p>
+            <p>Curiosity &times; Constraints &times; Patterns, raised to the power of Iteration.</p>
+            <p>You start with a question. The constraints force you to innovate. The patterns show you what works. And iteration compounds it all into something real.</p>
+            <p>That&apos;s how a screenwriter builds rockets. That&apos;s how ideas become breakthroughs. Not through inspiration alone, but through structure. Through process. Through showing up and trying again.</p>
+            <p>The people who change things aren&apos;t the ones who wait for the perfect idea. They&apos;re the ones who take an imperfect question and iterate until it works.</p>
+          </article>
+        </div>
       </main>
+
+      {/* Footer */}
       <footer className="w-full bg-black py-10 flex flex-col items-center border-t border-[#232323]">
         <div className="flex flex-row gap-8 mb-4 text-[#ededed] text-lg font-medium">
           <Link href="/about" className="hover:underline font-normal">about</Link>
@@ -78,7 +84,7 @@ export default function Blogs() {
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.699 1.028 1.593 1.028 2.686 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
           </a>
           <a href="https://www.youtube.com/@afia_ava" target="_blank" rel="noopener noreferrer" className="bg-[#18181b] rounded-xl p-3 text-[#ededed] hover:bg-[#232323] transition">
-            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M21.8 8.001a2.75 2.75 0 0 0-1.94-1.94C18.07 6 12 6 12 6s-6.07 0-7.86.061a2.75 2.75 0 0 0-1.94 1.94C2 9.79 2 12 2 12s0 2.21.061 3.999a2.75 2.75 0 0 0 1.94 1.94C5.93 18 12 18 12 18s6.07 0 7.86-.061a2.75 2.75 0 0 0 1.94-1.94C22 14.21 22 12 22 12s0-2.21-.2-3.999zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M21.8 8.001a2.75 2.75 0 0 0-1.94-1.94C18.07 6 12 6 12 6s-6.07 0-7.86.061a2.75 2.75 0 0 0 1.94 1.94C2 9.79 2 12 2 12s0 2.21.061 3.999a2.75 2.75 0 0 0 1.94 1.94C5.93 18 12 18 12 18s6.07 0 7.86-.061a2.75 2.75 0 0 0 1.94-1.94C22 14.21 22 12 22 12s0-2.21-.2-3.999zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
           </a>
         </div>
         <div className="text-[#bdbdbd] text-sm mb-2">© 2025 afia ava. all rights reserved.</div>
